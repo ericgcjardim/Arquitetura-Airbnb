@@ -31,13 +31,7 @@ O Airbnb atua como intermediador em aluguéis de curto prazo, variando de quarto
 
 ### Infra de software
 
-- A infra do Airbnb é embasada no modelo de arquitetura de micro-serviços, consistindo de diversos serviços separados por nicho e localidade conectados por APIS.
-
-
-## Conclusão
-
-A compreensão destes dados e requisitos é fundamental para entender a arquitetura da Airbnb. À medida que prosseguimos com nossa análise, discutiremos como esses dados influenciam nas decisões arquiteturais da empresa. Além disso, a infra da Airbnb também faz isso de duas Hive Clusters e uma Spark Cluster, a razão da utilização da estrtura de clusters se dá pelo alto volume de dados a serem processados e armazenados. segue um breve resumo da organização das clusters:
-
+- A infra do Airbnb é embasada no modelo de arquitetura de micro-serviços, consistindo de diversos serviços separados por nicho e localidade conectados por APIS.Além disso, a infra da Airbnb também faz isso de duas Hive Clusters e uma Spark Cluster, a razão da utilização da estrtura de clusters se dá pelo alto volume de dados a serem processados e armazenados. segue um breve resumo da organização das clusters:
 
 ----- Gold Hive Cluster
 
@@ -52,8 +46,13 @@ A compreensão destes dados e requisitos é fundamental para entender a arquitet
   Dedicado integralmente para armazenamento e processamento de dados com aprendizado de máquina.
 
 
-
   Além disso, outros fatores interessante da infra da Airbnb incluem a utilização de ferramentas de código open source, sempre contribuindo para comunidade quando possível.
+
+  ## Conclusão
+
+A compreensão destes dados e requisitos é fundamental para entender a arquitetura da Airbnb. À medida que prosseguimos com nossa análise, discutiremos como esses dados influenciam nas decisões arquiteturais da empresa. 
+
+
 
 
 ---
