@@ -28,9 +28,33 @@ O Airbnb atua como intermediador em aluguéis de curto prazo, variando de quarto
 
 - O Airbnb opera em por volta de **220 países e regiões** em mais de **100 mil cidades**. Assim, a plataforma precisa lidar com questões como latência, disponibilidade e consistência dos dados, além de múltiplos idiomas, moedas e regulamentações locais.
 
+
+### Infra de software
+
+- A infra do Airbnb é embasada no modelo de arquitetura de micro-serviços, consistindo de diversos serviços separados por nicho e localidade conectados por APIS.
+
+
 ## Conclusão
 
-A compreensão destes dados e requisitos é fundamental para entender a arquitetura da Airbnb. À medida que prosseguimos com nossa análise, discutiremos como esses dados influenciam nas decisões arquiteturais da empresa.
+A compreensão destes dados e requisitos é fundamental para entender a arquitetura da Airbnb. À medida que prosseguimos com nossa análise, discutiremos como esses dados influenciam nas decisões arquiteturais da empresa. Além disso, a infra da Airbnb também faz isso de duas Hive Clusters e uma Spark Cluster, a razão da utilização da estrtura de clusters se dá pelo alto volume de dados a serem processados e armazenados. segue um breve resumo da organização das clusters:
+
+
+----- Gold Hive Cluster
+
+  Projetado para execução de trabalhos críticos. Responsável também por armazenar as regras de negócio do sistema.
+
+----- Silver Hive Cluster
+
+  Projetado para ser mais flexível e armazenar processos de menor prioridade. Utilizado principalmente para consulta e análise de dados. Mais caracterizado por um ambiente DEV.
+
+----- Spark Cluster
+
+  Dedicado integralmente para armazenamento e processamento de dados com aprendizado de máquina.
+
+
+
+  Além disso, outros fatores interessante da infra da Airbnb incluem a utilização de ferramentas de código open source, sempre contribuindo para comunidade quando possível.
+
 
 ---
 
@@ -39,3 +63,4 @@ A compreensão destes dados e requisitos é fundamental para entender a arquitet
 - https://interviewnoodle.com/hotel-booking-system-design-airbnb-1283bbef71ac
 - https://www.searchlogistics.com/learn/statistics/airbnb-statistics/
 - https://oglobo.globo.com/rio/web-summit-rio/noticia/2023/05/hospedes-do-airbnb-movimentam-r-26-bilhoes-no-brasil-plataforma-calcula-gerar-10-mil-empregos.ghtml
+- https://medium.com/airbnb-engineering/data-infrastructure-at-airbnb-8adfb34f169c
