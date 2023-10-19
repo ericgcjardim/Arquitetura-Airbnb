@@ -35,7 +35,7 @@ A compreensão destes dados e requisitos é fundamental para entender a arquitet
 ---
 
 **Referencias**
-https://blog.quastor.org/p/airbnbs-architecture
-https://interviewnoodle.com/hotel-booking-system-design-airbnb-1283bbef71ac
-https://www.searchlogistics.com/learn/statistics/airbnb-statistics/
-https://oglobo.globo.com/rio/web-summit-rio/noticia/2023/05/hospedes-do-airbnb-movimentam-r-26-bilhoes-no-brasil-plataforma-calcula-gerar-10-mil-empregos.ghtml
+- https://blog.quastor.org/p/airbnbs-architecture
+- https://interviewnoodle.com/hotel-booking-system-design-airbnb-1283bbef71ac
+- https://www.searchlogistics.com/learn/statistics/airbnb-statistics/
+- https://oglobo.globo.com/rio/web-summit-rio/noticia/2023/05/hospedes-do-airbnb-movimentam-r-26-bilhoes-no-brasil-plataforma-calcula-gerar-10-mil-empregos.ghtml
