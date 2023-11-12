@@ -52,7 +52,25 @@ O Airbnb atua como intermediador em aluguéis de curto prazo, variando de quarto
 
 A compreensão destes dados e requisitos é fundamental para entender a arquitetura da Airbnb. À medida que prosseguimos com nossa análise, discutiremos como esses dados influenciam nas decisões arquiteturais da empresa. 
 
+### Parte 3
+A arquitetura do sistema do Airbnb é um exemplo complexo de design de sistemas, que abrange desde a escolha da tecnologia até a gestão de requisitos funcionais e não funcionais. 
 
+
+### Requisitos e Design do Sistema
+- **Requisitos Funcionais**: Incluem a necessidade dos hotéis de se cadastrarem facilmente, atualizarem e visualizarem reservas. Para os usuários, é crucial poder pesquisar e reservar hotéis, além de visualizar suas reservas​​.
+- **Requisitos Não Funcionais**: Envolvem baixa latência para acesso por usuários e hotéis, disponibilidade constante sem ponto único de falha e consistência para usuários e hotéis​​.
+- **Trade-offs de Design**: A arquitetura foi projetada priorizando disponibilidade, seguida de consistência e latência. Por enfatizar a disponibilidade e consistência, há um trade-off inevitável com a latência, implicando tempos maiores para completar tarefas​​.
+
+### Tecnologias Adotadas
+- **Infraestrutura na Nuvem**: O Airbnb depende fortemente de serviços de computação na nuvem, especificamente da Amazon Web Services (AWS). A AWS fornece uma infraestrutura escalável e confiável, além de uma gama de ferramentas para gerenciar o aplicativo​​.
+- **Backend e Frontend**: O backend do aplicativo é construído com uma combinação de Ruby on Rails e Node.js, enquanto o frontend é desenvolvido em React Native. Essa combinação de tecnologias facilita uma experiência de usuário contínua em diferentes plataformas​​.
+- **Arquitetura de Microserviços**: O Airbnb adota uma abordagem de microserviços, dividindo a aplicação em serviços menores e independentes que se comunicam através de APIs. Isso permite que a plataforma escale sua aplicação de forma mais eficiente, pois cada serviço pode ser escalado independentemente conforme necessário​​.
+- **Gateway de API**: No centro da arquitetura está o Gateway de API, que é o ponto de entrada único para todas as solicitações do cliente. Ele é responsável por rotear solicitações para o serviço apropriado e gerenciar autenticação e autorização​​.
+
+### Serviços Específicos
+- **Serviços-chave**: Incluem o Serviço de Usuário para autenticação e informações de perfil, o Serviço de Busca para lidar com consultas e retornar resultados, o Serviço de Reservas para gerir todo o processo de reserva, o Serviço de Mensagens para mensagens em tempo real entre hóspedes e anfitriões, o Serviço de Avaliação para o sistema de avaliações e o Serviço de Notificação para notificações por push, email e outros tipos​​.
+
+Essas escolhas tecnológicas e de design refletem a necessidade do Airbnb de operar em grande escala, atendendo a uma base de usuários global com diferentes requisitos e expectativas. A arquitetura do sistema é, portanto, uma combinação cuidadosa de confiabilidade, escalabilidade e eficiência, permitindo que a plataforma ofereça uma experiência de usuário fluida e intuitiva.
 
 
 ---
