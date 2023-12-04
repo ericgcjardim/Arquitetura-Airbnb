@@ -131,7 +131,7 @@ O Airbnb está evoluindo sua arquitetura para um modelo híbrido que combina mic
 - **Consolidação de Serviços**: Visa criar blocos de serviço onde cada bloco encapsula uma coleção de microserviços, facilitando o gerenciamento e a manutenção.
 - **Serviço de Agregação de Dados**:  Este serviço atua como um intermediário entre o backend interno e os blocos de serviço. É responsável por coletar e distribuir dados para os vários microserviços.
 - **Blocos de Serviço**: Cada bloco encapsula um conjunto de microserviços relacionados, promovendo organização e eficiência.
-![alt text](http://url/to/img.png)
+![alt text](./arq2.png)
 ---
 
 **Referencias**
